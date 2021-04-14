@@ -1,38 +1,111 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.container-fluid{
+padding: 0;
+}
+
+.row{
+  margin: 0;
+}
+
+.start {
+  background: antiquewhite;
+
+}
+
+.chooseFile {
   text-align: center;
+  font-size: 25px;
+  padding: 15px 0;
+  font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tableWrapper {
+  width: 95%;
+  padding: 5px;
+  overflow: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+.cartContent {
+  height: 140vh;
+  padding-top: 25vh;
+  background: rgb(192,192,227);
+  background: linear-gradient(162deg, rgba(192,192,227,1) 35%, rgba(199,151,228,1) 100%);
+
+  .card {
+    border: none;
+    background: ghostwhite;
+    border-radius: 5%;
+
+    :hover{
+      cursor: pointer;
+    }
+
+    .cardImgStyle {
+      align-self: center;
+      img {
+        height: 100%;
+        width: 100%;
+        margin-top: 10px;
+        border-radius: 5%;
+        align-self: center;
+        color: white;
+      }
+
+    }
+    .card-body {
+      height: 55%;
+      overflow: hidden;
+      padding: 5px 1rem;
+
+
+      .card-title{
+        text-align: center;
+        font-weight: bold;
+        margin: 2px 0;
+      }
+
+    }
+  ;
   }
-}
+  .closedCard {
+    border: none;
+    border-radius: 5%;
+    background-color: hsl(34, 53%, 82%);
+    background-image: repeating-linear-gradient(45deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+            hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+            hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+            hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+            hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+            hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 120px, hsla(197, 62%, 11%, 0.5) 120px, hsla(197, 62%, 11%, 0.5) 140px
+    ),
+    repeating-linear-gradient(135deg, transparent 5px, hsla(197, 62%, 11%, 0.5) 5px, hsla(197, 62%, 11%, 0.5) 10px,
+                    hsla(5, 53%, 63%, 0) 10px, hsla(5, 53%, 63%, 0) 35px, hsla(5, 53%, 63%, 0.5) 35px, hsla(5, 53%, 63%, 0.5) 40px,
+                    hsla(197, 62%, 11%, 0.5) 40px, hsla(197, 62%, 11%, 0.5) 50px, hsla(197, 62%, 11%, 0) 50px, hsla(197, 62%, 11%, 0) 60px,
+                    hsla(5, 53%, 63%, 0.5) 60px, hsla(5, 53%, 63%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 70px, hsla(35, 91%, 65%, 0.5) 80px,
+                    hsla(35, 91%, 65%, 0) 80px, hsla(35, 91%, 65%, 0) 90px, hsla(5, 53%, 63%, 0.5) 90px, hsla(5, 53%, 63%, 0.5) 110px,
+                    hsla(5, 53%, 63%, 0) 110px, hsla(5, 53%, 63%, 0) 140px, hsla(197, 62%, 11%, 0.5) 140px, hsla(197, 62%, 11%, 0.5) 160px
+    );
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+    :hover{
+      cursor: pointer;
+    }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    .closedCard-title{
+      font-weight: bold;
+      color: white;
+      text-align: center;
+
+    }
+
+
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
 }

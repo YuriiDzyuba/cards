@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import Flip from 'react-reveal/Flip';
 
-export const Cart = ({header='', content='', number, imgUrl='', cartQuantity}) => {
+export const Card = ({header='', content='', number, imgUrl='', cartQuantity}) => {
 
     const [hideCart, setHideCart] = useState(true);
 
@@ -16,18 +16,23 @@ export const Cart = ({header='', content='', number, imgUrl='', cartQuantity}) =
     switch (cartQuantity) {
         case 1:
         case 2:
+            size = 'col-5'
+            cartHeight = '85vh'
+            numberSize = '68vh'
+            numberLineHeight = '60vh'
+            break
         case 3:
         case 4:
-            size = 'col-6'
-            cartHeight = '45vh'
+            size = 'col-3'
+            cartHeight = '75vh'
             numberSize = '38vh'
-            numberLineHeight = '30vh'
+            numberLineHeight = '50vh'
             break
         case 5:
         case 6:
         case 7:
         case 8:
-            size = 'col-4'
+            size = 'col-3'
             cartHeight = '45vh'
             numberSize = '35vh'
             numberLineHeight = '25vh'

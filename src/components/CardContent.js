@@ -1,12 +1,10 @@
-import React, {Fragment} from 'react'
-import {Cart} from "./Cart";
+import React from 'react'
+import {Card} from "./Card";
 
-export const CartContent = (props) => {
-    console.log(props, 'props')
-
+export const CardContent = (props) => {
 
     let carts = props.cartItems.map((e, i) => {
-        return (<Cart
+        return (<Card
             cartQuantity ={props.cartItems.length}
             key={i}
             number={i + 1}
@@ -14,7 +12,6 @@ export const CartContent = (props) => {
             content={e[1]}
             imgUrl={e[2]}
         />)
-
 
     })
 
